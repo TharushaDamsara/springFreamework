@@ -1,4 +1,10 @@
 package edu.ijse.bean;
 
-public class Bean1 {
+import org.springframework.stereotype.Component;
+
+@Component
+public class Bean5 {
+    public Bean5() {
+        System.out.println("bean5");
+    }
 }

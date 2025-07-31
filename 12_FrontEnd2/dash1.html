@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/dash1.css">
+</head>
+<body>
+<div class="bg-animation"></div>
+
+<!-- Sidebar -->
+<nav class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+        <h3><i class="fas fa-rocket"></i>Dashboard</h3>
+    </div>
+    <ul class="sidebar-nav">
+        <li class="nav-item">
+            <a href="#" class="nav-link active" data-page="overview">
+                <i class="fas fa-tachometer-alt"></i>
+                Overview
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" data-page="analytics">
+                <i class="fas fa-chart-line"></i>
+                Analytics
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" data-page="users">
+                <i class="fas fa-users"></i>
+                Users
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" data-page="orders">
+                <i class="fas fa-shopping-cart"></i>
+                Orders
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" data-page="products">
+                <i class="fas fa-box"></i>
+                Products
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" data-page="reports">
+                <i class="fas fa-file-alt"></i>
+                Reports
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" data-page="settings">
+                <i class="fas fa-cog"></i>
+                Settings
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<main class="main-content" id="mainContent">
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="top-nav-right">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search anything...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <button class="notification-btn">
+                <i class="fas fa-bell"></i>
+                <span class="notification-badge">3</span>
+            </button>
+
+            <div class="user-profile" id="userProfile">
+                <div class="user-avatar">JD</div>
+                <div class="user-info">
+                    <h6>John Doe</h6>
+                    <small>Administrator</small>
+                </div>
+                <i class="fas fa-chevron-down" style="color: rgba(255,255,255,0.6); margin-left: 5px;"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-content">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <div class="welcome-card">
+                <div class="welcome-content">
+                    <h1 class="welcome-title">Welcome back, John! 👋</h1>
+                    <p class="welcome-subtitle">Here's what's happening with your business today.</p>
+
+                    <div class="welcome-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">24</div>
+                            <div class="stat-label">New Orders</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1,248</div>
+                            <div class="stat-label">Total Users</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">$12,456</div>
+                            <div class="stat-label">Revenue</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <div class="stat-icon users">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="stat-value">1,248</div>
+                <div class="stat-label">Total Users</div>
+                <div class="stat-change positive">
+                    <i class="fas fa-arrow-up"></i>
+                    +12.5% from last month
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <div class="stat-icon revenue">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+                <div class="stat-value">$52,456</div>
+                <div class="stat-label">Total Revenue</div>
+                <div class="stat-change positive">
+                    <i class="fas fa-arrow-up"></i>
+                    +8.2% from last month
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <div class="stat-icon orders">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="stat-value">1,789</div>
+                <div class="stat-label">Total Orders</div>
+                <div class="stat-change positive">
+                    <i class="fas fa-arrow-up"></i>
+                    +15.3% from last month
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-card-header">
+                    <div class="stat-icon growth">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+                <div class="stat-value">94.5%</div>
+                <div class="stat-label">Growth Rate</div>
+                <div class="stat-change positive">
+                    <i class="fas fa-arrow-up"></i>
+                    +2.1% from last month
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts-section">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h5 class="chart-title">Revenue Overview</h5>
+                    <select class="chart-period">
+                        <option>Last 7 days</option>
+                        <option>Last 30 days</option>
+                        <option>Last 3 months</option>
+                    </select>
+                </div>
+                <div class="chart-placeholder">
+                    <i class="fas fa-chart-area" style="font-size: 3rem; margin-right: 15px;"></i>
+                    Revenue chart would be rendered here using Chart.js or similar
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h5 class="chart-title">Traffic Sources</h5>
+                </div>
+                <div class="chart-placeholder">
+                    <i class="fas fa-chart-pie" style="font-size: 3rem; margin-right: 15px;"></i>
+                    Pie chart would be rendered here
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="activity-section">
+            <div class="activity-card">
+                <div class="activity-header">
+                    <h5>Recent Activity</h5>
+                    <a href="#" style="color: #4facfe; text-decoration: none; font-size: 0.9rem;">View All</a>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon user">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="activity-details">
+                        <h6>New user registered</h6>
+                        <small>Sarah Johnson joined the platform</small>
+                    </div>
+                    <div class="activity-time">2m ago</div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon order">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="activity-details">
+                        <h6>New order placed</h6>
+                        <small>Order #1234 - $299.99</small>
+                    </div>
+                    <div class="activity-time">5m ago</div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon payment">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="activity-details">
+                        <h6>Payment received</h6>
+                        <small>$1,299.99 from Enterprise Plan</small>
+                    </div>
+                    <div class="activity-time">1h ago</div>
+                </div>
+            </div>
+
+            <div class="activity-card">
+                <div class="activity-header">
+                    <h5>Top Products</h5>
+                    <a href="#" style="color: #4facfe; text-decoration: none; font-size: 0.9rem;">View All</a>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="activity-details">
+                        <h6>MacBook Pro M2</h6>
+                        <small>142 sales this month</small>
+                    </div>
+                    <div class="activity-time">$2,399</div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="activity-details">
+                        <h6>iPhone 14 Pro</h6>
+                        <small>98 sales this month</small>
+                    </div>
+                    <div class="activity-time">$999</div>
+                </div>
+
+                <div class="activity-item">
+                    <div class="activity-icon" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <div class="activity-details">
+                        <h6>AirPods Pro</h6>
+                        <small>76 sales this month</small>
+                    </div>
+                    <div class="activity-time">$249</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="js/dash1.js"></script>
+</body>
+</html>

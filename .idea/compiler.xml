@@ -2,12 +2,40 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="FullMode_vs_LightMode" />
+        <module name="SpringBeanLifeCycle" />
+        <module name="RunTimeValueInjection" />
+        <module name="Configueration" />
+        <module name="SpringEnviorment" />
+        <module name="Spring_Web_Mvc" />
+        <module name="depInjectSpring" />
+        <module name="ConfigAsg" />
         <module name="01_SpringCore" />
+        <module name="RESTControllers" />
+      </profile>
+      <profile name="Annotation profile for pos" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="pos" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Back_End" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Back_End" options="-parameters" />
+      <module name="pos" options="-parameters" />
+    </option>
   </component>
 </project>

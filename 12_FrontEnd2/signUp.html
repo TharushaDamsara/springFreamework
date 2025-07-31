@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Sign-Up Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+<body>
+<div class="bg-animation"></div>
+<div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+
+<div class="signup-container">
+    <div class="signup-card">
+        <div class="signup-header">
+            <h2><i class="fas fa-user-plus me-3"></i>Join Us</h2>
+            <p>Create your account and get started</p>
+        </div>
+
+        <form id="signupForm">
+            <div class="error-message" id="errorMessage"></div>
+            <div class="success-message" id="successMessage"></div>
+
+            <div class="form-row">
+                <div class="input-group form-floating">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" class="form-control with-icon" id="firstName" placeholder="First Name" required>
+                    <label for="firstName">First Name</label>
+                </div>
+
+                <div class="input-group form-floating">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" class="form-control with-icon" id="lastName" placeholder="Last Name" required>
+                    <label for="lastName">Last Name</label>
+                </div>
+            </div>
+
+            <div class="input-group form-floating">
+                <i class="fas fa-envelope input-icon"></i>
+                <input type="email" class="form-control with-icon" id="email" placeholder="Email" required>
+                <label for="email">Email Address</label>
+            </div>
+
+            <div class="input-group form-floating">
+                <i class="fas fa-phone input-icon"></i>
+                <input type="tel" class="form-control with-icon" id="phone" placeholder="Phone">
+                <label for="phone">Phone Number (Optional)</label>
+            </div>
+
+            <div class="input-group form-floating">
+                <i class="fas fa-lock input-icon"></i>
+                <input type="password" class="form-control with-icon" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+                <i class="fas fa-eye password-toggle" id="passwordToggle"></i>
+            </div>
+
+            <div class="password-strength" id="passwordStrength" style="display: none;">
+                <div class="strength-bar">
+                    <div class="strength-fill"></div>
+                </div>
+                <div class="strength-text">Password strength: <span id="strengthText">Weak</span></div>
+            </div>
+
+            <div class="input-group form-floating">
+                <i class="fas fa-lock input-icon"></i>
+                <input type="password" class="form-control with-icon" id="confirmPassword" placeholder="Confirm Password" required>
+                <label for="confirmPassword">Confirm Password</label>
+                <i class="fas fa-eye password-toggle" id="confirmPasswordToggle"></i>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                <label class="form-check-label" for="agreeTerms">
+                    I agree to the <a href="#" id="termsLink">Terms of Service</a> and <a href="#" id="privacyLink">Privacy Policy</a>
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="newsletter">
+                <label class="form-check-label" for="newsletter">
+                    Subscribe to our newsletter for updates and promotions
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-signup">
+                <span>Create Account</span>
+            </button>
+        </form>
+
+        <div class="social-signup">
+            <p>Or sign up with</p>
+            <div class="social-buttons">
+                <a href="#" class="social-btn" id="googleSignup">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="social-btn" id="facebookSignup">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-btn" id="twitterSignup">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="login-link">
+            <p>Already have an account? <a href="#" id="loginLink">Sign in here</a></p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="js/signUp.js"></script>
+</body>
+</html>

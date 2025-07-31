@@ -1,4 +1,5 @@
 package edu.ijse.di;
 
-public interface di {
+public interface Di {
+    void sayHello();
 }

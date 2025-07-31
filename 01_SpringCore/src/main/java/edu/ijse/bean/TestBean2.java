@@ -2,10 +2,10 @@ package edu.ijse.bean;
 
 import org.springframework.stereotype.Component;
 
-@Component
-public class TestBean1 {
+@Component("ubetta")
+public class TestBean2 {
 
-    public TestBean1() {
-        System.out.println("test bean 1 huto");
+    public TestBean2() {
+        System.out.println("test bean 2 huto");
     }
 }

@@ -1,4 +1,7 @@
 package edu.ijse.bean;
 
-public class Bean1 {
+public class Bean4 {
+    public Bean4() {
+        System.out.println("bean4");
+    }
 }
